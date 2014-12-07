@@ -6,11 +6,11 @@ import tornado.websocket
 clients = []
 buffers = []
 
-#diff12
 class IndexHandler(tornado.web.RequestHandler):
-	@tornado.web.asynchronous
-	def get(self, request):
+
+	def get(request):
 		request.render("index.html")
+
 
 class SocketChatHandler(tornado.websocket.WebSocketHandler):
 	def open(self, *args):
