@@ -6,7 +6,6 @@ import tornado.websocket
 clients = []
 buffers = []
 
-#change
 class IndexHandler(tornado.web.RequestHandler):
 	@tornado.web.asynchronous
 	def get(self, request):
